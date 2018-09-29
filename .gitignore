@@ -25,3 +25,5 @@ hs_err_pid*
 /eclipse-output-main/
 /eclipse-output-test/
 /eclipse-output/
+/target/
+/deps/
