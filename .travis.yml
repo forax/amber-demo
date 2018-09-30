@@ -10,7 +10,7 @@ before_install:
 install:
   - wget https://github.com/forax/valuetype-lambda/releases/download/untagged-c0d47fd5b9ddc8ecf1bb/jdk-12-concise-method.tar.gz
   - tar zxvf jdk-12-concise-method.tar.gz
-  - export JAVA_HOME=jdk-12-concise-method
+  - export JAVA_HOME=`pwd`/jdk-12-concise-method
   - $JAVA_HOME/bin/java --version
   - git clone https://github.com/forax/pro.git
   - cd pro
