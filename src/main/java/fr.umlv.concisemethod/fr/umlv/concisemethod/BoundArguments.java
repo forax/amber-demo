@@ -16,7 +16,7 @@ public class BoundArguments {
   public static void main(String[] args) {
     var arg1 = new BoundArguments(1);
     var arg2 = new BoundArguments(2);
-    System.out.println(arg1.m());
-    System.out.println(arg1.m(arg2));
+    System.out.println("BoundArguments " + arg1.m());
+    System.out.println("BoundArguments " + arg1.m(arg2));
   }
 }
