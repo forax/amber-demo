@@ -8,7 +8,6 @@ public class Main {
     BoundArguments.main(args);
     ConciseMethodRef.main(args);
     Outer.main(args);
-    DynFunction.main(args);
   }
   
   public static void main(String[] args) = Main::all;

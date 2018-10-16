@@ -18,12 +18,15 @@ resolver.
     )
 
  compiler.
-   sourceRelease(12)
+   sourceRelease(12).
+   enablePreview(true)
 //     rawArguments(
 //         "--processor-module-path", "deps"   // enable JMH annotation processor
 //     )
 
 docer.
+    sourceRelease(12).
+    enablePreview(true).
     quiet(true).
     link(uri("https://docs.oracle.com/en/java/javase/11/docs/api/"))
    
@@ -31,6 +34,9 @@ packager.
     modules(
         "fr.umlv.concisemethod@1.0/fr.umlv.concisemethod.Main"
     )   
+    
+runner.
+  enablePreview(true)   
     
 run(resolver, modulefixer, compiler, tester, docer, packager, runner /*, perfer */)
 
