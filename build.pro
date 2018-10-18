@@ -40,4 +40,4 @@ runner.
     
 run(resolver, modulefixer, compiler, tester, docer, packager, runner /*, perfer */)
 
-/exit
+/exit errorCode()
