@@ -6,9 +6,10 @@ public class Outer {
   }
   
   
-  String create() = new Inner()::foo;
+  // method ref are now limited to more or less constant
+  //String create() = new Inner()::foo;
   
   public static void main(String[] args) {
-    System.out.println(new Outer().create());
+    //System.out.println(new Outer().create());
   }
 }
