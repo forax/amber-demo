@@ -12,5 +12,5 @@ install:
   - java pro_wrapper.java version
 
 script:
-  - ./pro/target/pro/bin/pro build build.pro
+  - ./pro/bin/pro build build.pro
   
