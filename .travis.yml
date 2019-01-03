@@ -1,16 +1,21 @@
 sudo: false
 dist: trusty
 language: java
-jdk: openjdk11
 
 # https://github.com/travis-ci/travis-ci/issues/8408
 before_install:
   - unset _JAVA_OPTIONS
 
 install:
-  - export PRO_SPECIAL_BUILD="early-access-amber"
-  - java pro_wrapper.java version
+  - wget https://github.com/forax/valuetype-lambda/releases/download/untagged-1e3dd4987d302bf7fa2e/jdk-12-concise-method.tar.gz
+  - tar zxvf jdk-12-concise-method.tar.gz
+  - export JAVA_HOME=`pwd`/jdk-12-concise-method
+  - $JAVA_HOME/bin/java --version
+  - git clone https://github.com/forax/pro.git
+  - cd pro
+  - bash build.sh
+  - cd ..
 
 script:
-  - ./pro/bin/pro build build.pro
+  - ./pro/target/pro/bin/pro build build.pro
   
