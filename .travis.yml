@@ -7,9 +7,9 @@ before_install:
   - unset _JAVA_OPTIONS
 
 install:
-  - wget https://github.com/forax/valuetype-lambda/releases/download/untagged-1e3dd4987d302bf7fa2e/jdk-12-concise-method.tar.gz
-  - tar zxvf jdk-12-concise-method.tar.gz
-  - export JAVA_HOME=`pwd`/jdk-12-concise-method
+  - wget https://github.com/forax/java-next/releases/download/untagged-4f6eecd7da084e8c4254/jdk-13-concise-method-linux.tar.gz
+  - tar zxvf jdk-jdk-13-concise-method-linux.tar.gz
+  - export JAVA_HOME=`pwd`/jdk-13-concise-method
   - $JAVA_HOME/bin/java --version
   - git clone https://github.com/forax/pro.git
   - cd pro
