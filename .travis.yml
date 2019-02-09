@@ -2,15 +2,23 @@ sudo: false
 dist: trusty
 language: java
 
+env:
+  - FOLDER="concise-method"
+    TAG="untagged-315f4fcd827ffdd40b11"
+    JAVA_NEXT="jdk-13-concise-method"
+  - FOLDER="compiler-intrinsic"
+    TAG="untagged-344fe5495600f35cb9f0"
+    JAVA_NEXT="jdk-13-intrinsic"
+    
 # https://github.com/travis-ci/travis-ci/issues/8408
 before_install:
   - unset _JAVA_OPTIONS
 
 install:
-  - wget https://github.com/forax/java-next/releases/download/untagged-315f4fcd827ffdd40b11/jdk-13-concise-method-linux.tar.gz
-  - tar zxvf jdk-13-concise-method-linux.tar.gz
-  - export JAVA_HOME=`pwd`/jdk-13-concise-method
-  - cd concise-method
+  - wget https://github.com/forax/java-next/releases/download/$TAG/$JAVA_NEXT-linux.tar.gz
+  - tar zxvf $JAVA_NEXT-linux.tar.gz
+  - export JAVA_HOME=`pwd`/$JAVA_NEXT
+  - cd $FOLDER
   - git clone https://github.com/forax/pro.git
   - cd pro
   - bash build.sh

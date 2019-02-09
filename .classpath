@@ -6,6 +6,12 @@
 			<attribute name="test" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry excluding="module-info.java" kind="src" output="eclipse-output/main" path="compiler-intrinsic/src/main/java/fr.umlv.compilerintrinsic"/>
+    <classpathentry excluding="module-info.java" kind="src" output="eclipse-output/test" path="compiler-intrinsic/src/test/java/fr.umlv.compilerintrinsic">
+        <attributes>
+            <attribute name="test" value="true"/>
+        </attributes>
+    </classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
 		<attributes>
 			<attribute name="module" value="true"/>
