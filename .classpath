@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry excluding="module-info.java" kind="src" output="eclipse-output/main" path="concisemethod/src/main/java/fr.umlv.concisemethod"/>
-	<classpathentry excluding="module-info.java" kind="src" output="eclipse-output/test" path="concisemethod/src/test/java/fr.umlv.concisemethod">
+	<classpathentry excluding="module-info.java" kind="src" output="eclipse-output/main" path="concise-method/src/main/java/fr.umlv.concisemethod"/>
+	<classpathentry excluding="module-info.java" kind="src" output="eclipse-output/test" path="concise-method/src/test/java/fr.umlv.concisemethod">
 		<attributes>
 			<attribute name="test" value="true"/>
 		</attributes>
