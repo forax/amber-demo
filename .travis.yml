@@ -10,12 +10,12 @@ install:
   - wget https://github.com/forax/java-next/releases/download/untagged-315f4fcd827ffdd40b11/jdk-13-concise-method-linux.tar.gz
   - tar zxvf jdk-13-concise-method-linux.tar.gz
   - export JAVA_HOME=`pwd`/jdk-13-concise-method
-  - $JAVA_HOME/bin/java --version
+  - cd concise-method
   - git clone https://github.com/forax/pro.git
   - cd pro
   - bash build.sh
   - cd ..
 
 script:
-  - ./pro/target/pro/bin/pro build build.pro
+  - pro/target/pro/bin/pro
   

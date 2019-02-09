@@ -17,12 +17,6 @@ resolver.
 //     rawArguments(
 //         "--processor-module-path", "deps"   // enable JMH annotation processor
 //     )
-
-docer.
-    sourceRelease(13).
-    enablePreview(true).
-    quiet(true).
-    link(uri("https://docs.oracle.com/en/java/javase/11/docs/api/"))
    
 packager.
     modules(
@@ -32,6 +26,6 @@ packager.
 runner.
   enablePreview(true)   
     
-run(resolver, modulefixer, compiler, tester, docer, packager, runner /*, perfer */)
+run(resolver, modulefixer, compiler, tester, packager, runner /*, perfer */)
 
 /exit errorCode()
