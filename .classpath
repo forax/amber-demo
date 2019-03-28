@@ -7,17 +7,24 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry excluding="module-info.java" kind="src" output="eclipse-output/main" path="compiler-intrinsic/src/main/java/fr.umlv.compilerintrinsic"/>
-    <classpathentry excluding="module-info.java" kind="src" output="eclipse-output/test" path="compiler-intrinsic/src/test/java/fr.umlv.compilerintrinsic">
-        <attributes>
-            <attribute name="test" value="true"/>
-        </attributes>
-    </classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+	<classpathentry excluding="module-info.java" kind="src" output="eclipse-output/main" path="compiler-intrinsic/src/main/java/fr.umlv.compilerintrinsic.api"/>
+	<classpathentry excluding="module-info.java" kind="src" output="eclipse-output/main" path="compiler-intrinsic/src/main/java/fr.umlv.compilerintrinsic.service"/>
+	<classpathentry excluding="module-info.java" kind="src" output="eclipse-output/test" path="compiler-intrinsic/src/test/java/fr.umlv.compilerintrinsic">
+		<attributes>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk-13-intrinsic">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="compiler-intrinsic/deps/org.objectweb.asm.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
