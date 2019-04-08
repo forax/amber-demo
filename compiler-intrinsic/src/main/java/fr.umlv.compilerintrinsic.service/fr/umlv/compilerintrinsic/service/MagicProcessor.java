@@ -1,5 +1,5 @@
 package fr.umlv.compilerintrinsic.service;
-
+/*
 import java.lang.constant.ClassDesc;
 import java.lang.constant.ConstantDesc;
 import java.lang.constant.ConstantDescs;
@@ -13,12 +13,6 @@ import com.sun.tools.javac.intrinsics.Intrinsics;
 import com.sun.tools.javac.intrinsics.IntrinsicProcessor;
 import com.sun.tools.javac.intrinsics.IntrinsicProcessor.Result;
 
-/**
- *  <p><b>This is NOT part of any supported API.
- *  If you write code that depends on this, you do so at your own risk.
- *  This code and its internal interfaces are subject to change or
- *  deletion without notice.</b>
- */
 public class MagicProcessor implements IntrinsicProcessor {
   private static final Method REGISTER;
   static {
@@ -64,4 +58,4 @@ public class MagicProcessor implements IntrinsicProcessor {
         argClassDescs.length);
 
   }
-}
+}*/
